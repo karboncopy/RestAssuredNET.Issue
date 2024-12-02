@@ -1,0 +1,25 @@
+@RestAssuredNET.Issue_HostAddress = http://localhost:5034
+
+GET {{RestAssuredNET.Issue_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+POST {{RestAssuredNET.Issue_HostAddress}}/weatherforecast
+Content-Type: application/json
+
+{
+  "Name":"Stormy",
+  "TemperatureF": 157
+}
+
+###
+
+POST {{RestAssuredNET.Issue_HostAddress}}/weatherforecast
+Content-Type: application/json
+
+{
+  //WeatherForecast
+}
+
+###
